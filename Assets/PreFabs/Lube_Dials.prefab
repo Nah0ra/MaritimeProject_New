@@ -1,0 +1,762 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4190881467649000083
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1484400182549674202}
+  m_Layer: 0
+  m_Name: Lube_Dials
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1484400182549674202
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4190881467649000083}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -15.465366, y: 18.530964, z: 324.46622}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7014769024259255969}
+  - {fileID: 7014769024397921817}
+  - {fileID: 7014769025360593788}
+  - {fileID: 7014769024604763983}
+  - {fileID: 7014769026054236406}
+  - {fileID: 7014769024517261824}
+  - {fileID: 7014769024550128066}
+  - {fileID: 7014769026096127203}
+  - {fileID: 7014769025734851540}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7014769024259255968
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7014769024259255969}
+  - component: {fileID: 7014769024259255970}
+  m_Layer: 0
+  m_Name: Co Service Tank Level cm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7014769024259255969
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7014769024259255968}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 12.302613, y: -16.29105, z: -328.51373}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1484400182549674202}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7014769024259255970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7014769024259255968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f22de45c7508b714bae33739ae7711e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hide: 0
+  gaugeInputs:
+  - tagName: Fuel Pressure
+    minMaxValue: {x: 0, y: 180}
+    value: 0
+  dial:
+    Alignement: 0
+    Texture: {fileID: 2800000, guid: e0525bfd947ec98449e55df5d90e3080, type: 3}
+    Position: {x: 1252.1, y: 521.6}
+    ScaleRatio: 0.43
+  needles:
+  - tagName: Fuel Pressure
+    Alignement: 4
+    Texture: {fileID: 2800000, guid: 86b33f3417bc79b48bd81c0d35065b45, type: 3}
+    Pivot: {x: -48.99, y: 7.6}
+    PivotOffset: 16.92
+    posPivot: {x: 1327.12, y: 611.38995}
+    ScaleRatio: 0.24
+    DialRatioLock: 0
+    needleLimiter:
+    - LimiterName: 
+      minMaxValue: {x: 0, y: 180}
+      StartEndValue: {x: -224.9, y: 17.4}
+    Hide: 0
+  knots: []
+  textLayer:
+  - tagName: Fuel Pressure
+    Color: {r: 0, g: 0, b: 0, a: 0}
+    Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    FontSize: 20
+    fontStyle: 0
+    Alignement: 4
+    Position: {x: 0, y: 0}
+    Size: {x: 4, y: 4}
+    useTagValue: 0
+    roundToInt: 0
+--- !u!1 &7014769024397921816
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7014769024397921817}
+  - component: {fileID: 7014769024397921818}
+  m_Layer: 0
+  m_Name: Co Storage Tank Level cm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7014769024397921817
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7014769024397921816}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 12.302613, y: -16.29105, z: -328.51373}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1484400182549674202}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7014769024397921818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7014769024397921816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f22de45c7508b714bae33739ae7711e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hide: 0
+  gaugeInputs:
+  - tagName: Fuel Pressure
+    minMaxValue: {x: 0, y: 180}
+    value: 0
+  dial:
+    Alignement: 0
+    Texture: {fileID: 2800000, guid: e0525bfd947ec98449e55df5d90e3080, type: 3}
+    Position: {x: 801.7, y: 522.3}
+    ScaleRatio: 0.43
+  needles:
+  - tagName: Fuel Pressure
+    Alignement: 4
+    Texture: {fileID: 2800000, guid: 86b33f3417bc79b48bd81c0d35065b45, type: 3}
+    Pivot: {x: -48.99, y: 7.6}
+    PivotOffset: 16.92
+    posPivot: {x: 876.72003, y: 612.08997}
+    ScaleRatio: 0.24
+    DialRatioLock: 0
+    needleLimiter:
+    - LimiterName: 
+      minMaxValue: {x: 0, y: 180}
+      StartEndValue: {x: -224.9, y: 17.4}
+    Hide: 0
+  knots: []
+  textLayer:
+  - tagName: Fuel Pressure
+    Color: {r: 0, g: 0, b: 0, a: 0}
+    Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    FontSize: 20
+    fontStyle: 0
+    Alignement: 4
+    Position: {x: 0, y: 0}
+    Size: {x: 4, y: 4}
+    useTagValue: 0
+    roundToInt: 0
+--- !u!1 &7014769024517261831
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7014769024517261824}
+  - component: {fileID: 7014769024517261825}
+  m_Layer: 0
+  m_Name: Lo. Bef. Pistons Mpa
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7014769024517261824
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7014769024517261831}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 12.302613, y: -16.29105, z: -328.51373}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1484400182549674202}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7014769024517261825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7014769024517261831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f22de45c7508b714bae33739ae7711e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hide: 0
+  gaugeInputs:
+  - tagName: Fuel Pressure
+    minMaxValue: {x: 0, y: 1}
+    value: 0
+  dial:
+    Alignement: 0
+    Texture: {fileID: 2800000, guid: e23490540d8360143b8b37da048b2f60, type: 3}
+    Position: {x: 693.3, y: 800.3}
+    ScaleRatio: 0.43
+  needles:
+  - tagName: Fuel Pressure
+    Alignement: 4
+    Texture: {fileID: 2800000, guid: 86b33f3417bc79b48bd81c0d35065b45, type: 3}
+    Pivot: {x: -48.99, y: 7.6}
+    PivotOffset: 16.92
+    posPivot: {x: 768.32, y: 890.08997}
+    ScaleRatio: 0.24
+    DialRatioLock: 0
+    needleLimiter:
+    - LimiterName: 
+      minMaxValue: {x: 0, y: 1}
+      StartEndValue: {x: -224.9, y: -9.08}
+    Hide: 0
+  knots: []
+  textLayer:
+  - tagName: Fuel Pressure
+    Color: {r: 0, g: 0, b: 0, a: 0}
+    Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    FontSize: 20
+    fontStyle: 0
+    Alignement: 4
+    Position: {x: 0, y: 0}
+    Size: {x: 4, y: 4}
+    useTagValue: 0
+    roundToInt: 0
+--- !u!1 &7014769024550128065
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7014769024550128066}
+  - component: {fileID: 7014769024550128067}
+  m_Layer: 0
+  m_Name: Lo. Bef. Shaft Mpa
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7014769024550128066
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7014769024550128065}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 12.302613, y: -16.29105, z: -328.51373}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1484400182549674202}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7014769024550128067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7014769024550128065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f22de45c7508b714bae33739ae7711e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hide: 0
+  gaugeInputs:
+  - tagName: Fuel Pressure
+    minMaxValue: {x: 0, y: 1}
+    value: 0
+  dial:
+    Alignement: 0
+    Texture: {fileID: 2800000, guid: e23490540d8360143b8b37da048b2f60, type: 3}
+    Position: {x: 410, y: 801.7}
+    ScaleRatio: 0.43
+  needles:
+  - tagName: Fuel Pressure
+    Alignement: 4
+    Texture: {fileID: 2800000, guid: 86b33f3417bc79b48bd81c0d35065b45, type: 3}
+    Pivot: {x: -48.99, y: 7.6}
+    PivotOffset: 16.92
+    posPivot: {x: 485.02, y: 891.49}
+    ScaleRatio: 0.24
+    DialRatioLock: 0
+    needleLimiter:
+    - LimiterName: 
+      minMaxValue: {x: 0, y: 1}
+      StartEndValue: {x: -224.9, y: -9.08}
+    Hide: 0
+  knots: []
+  textLayer:
+  - tagName: Fuel Pressure
+    Color: {r: 0, g: 0, b: 0, a: 0}
+    Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    FontSize: 20
+    fontStyle: 0
+    Alignement: 4
+    Position: {x: 0, y: 0}
+    Size: {x: 4, y: 4}
+    useTagValue: 0
+    roundToInt: 0
+--- !u!1 &7014769024604763982
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7014769024604763983}
+  - component: {fileID: 7014769024604763976}
+  m_Layer: 0
+  m_Name: Lo Aft Transfer Pump MPa
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7014769024604763983
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7014769024604763982}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 12.302613, y: -16.29105, z: -328.51373}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1484400182549674202}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7014769024604763976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7014769024604763982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f22de45c7508b714bae33739ae7711e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hide: 0
+  gaugeInputs:
+  - tagName: Fuel Pressure
+    minMaxValue: {x: 0, y: 0.5}
+    value: 0
+  dial:
+    Alignement: 0
+    Texture: {fileID: 2800000, guid: d6125676a436e8842baf426fdd66d5cb, type: 3}
+    Position: {x: 679.5, y: 142.8}
+    ScaleRatio: 0.43
+  needles:
+  - tagName: Fuel Pressure
+    Alignement: 4
+    Texture: {fileID: 2800000, guid: 86b33f3417bc79b48bd81c0d35065b45, type: 3}
+    Pivot: {x: -48.99, y: 7.6}
+    PivotOffset: 16.92
+    posPivot: {x: 754.52, y: 232.59001}
+    ScaleRatio: 0.24
+    DialRatioLock: 0
+    needleLimiter:
+    - LimiterName: 
+      minMaxValue: {x: 0, y: 0.5}
+      StartEndValue: {x: -224.9, y: -89.1}
+    Hide: 0
+  knots: []
+  textLayer:
+  - tagName: Fuel Pressure
+    Color: {r: 0, g: 0, b: 0, a: 0}
+    Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    FontSize: 20
+    fontStyle: 0
+    Alignement: 4
+    Position: {x: 0, y: 0}
+    Size: {x: 4, y: 4}
+    useTagValue: 0
+    roundToInt: 0
+--- !u!1 &7014769025360593779
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7014769025360593788}
+  - component: {fileID: 7014769025360593789}
+  m_Layer: 0
+  m_Name: Lo Aft Transfer Pump 2 MPa
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7014769025360593788
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7014769025360593779}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 12.302613, y: -16.29105, z: -328.51373}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1484400182549674202}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7014769025360593789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7014769025360593779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f22de45c7508b714bae33739ae7711e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hide: 0
+  gaugeInputs:
+  - tagName: Fuel Pressure
+    minMaxValue: {x: 0, y: 0.5}
+    value: 0
+  dial:
+    Alignement: 0
+    Texture: {fileID: 2800000, guid: d6125676a436e8842baf426fdd66d5cb, type: 3}
+    Position: {x: 981.2, y: 146.1}
+    ScaleRatio: 0.43
+  needles:
+  - tagName: Fuel Pressure
+    Alignement: 4
+    Texture: {fileID: 2800000, guid: 86b33f3417bc79b48bd81c0d35065b45, type: 3}
+    Pivot: {x: -48.99, y: 7.6}
+    PivotOffset: 16.92
+    posPivot: {x: 1056.22, y: 235.89001}
+    ScaleRatio: 0.24
+    DialRatioLock: 0
+    needleLimiter:
+    - LimiterName: 
+      minMaxValue: {x: 0, y: 0.5}
+      StartEndValue: {x: -224.9, y: -89.1}
+    Hide: 0
+  knots: []
+  textLayer:
+  - tagName: Fuel Pressure
+    Color: {r: 0, g: 0, b: 0, a: 0}
+    Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    FontSize: 20
+    fontStyle: 0
+    Alignement: 4
+    Position: {x: 0, y: 0}
+    Size: {x: 4, y: 4}
+    useTagValue: 0
+    roundToInt: 0
+--- !u!1 &7014769025734851531
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7014769025734851540}
+  - component: {fileID: 7014769025734851541}
+  m_Layer: 0
+  m_Name: Lo Sump Level cm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7014769025734851540
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7014769025734851531}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 12.302613, y: -16.29105, z: -328.51373}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1484400182549674202}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7014769025734851541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7014769025734851531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f22de45c7508b714bae33739ae7711e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hide: 0
+  gaugeInputs:
+  - tagName: Fuel Pressure
+    minMaxValue: {x: 0, y: 180}
+    value: 0
+  dial:
+    Alignement: 0
+    Texture: {fileID: 2800000, guid: e0525bfd947ec98449e55df5d90e3080, type: 3}
+    Position: {x: 86.4, y: 507.4}
+    ScaleRatio: 0.451
+  needles:
+  - tagName: Fuel Pressure
+    Alignement: 4
+    Texture: {fileID: 2800000, guid: 86b33f3417bc79b48bd81c0d35065b45, type: 3}
+    Pivot: {x: -48.99, y: 7.6}
+    PivotOffset: 16.92
+    posPivot: {x: 165.851, y: 601.579}
+    ScaleRatio: 0.24
+    DialRatioLock: 0
+    needleLimiter:
+    - LimiterName: 
+      minMaxValue: {x: 0, y: 180}
+      StartEndValue: {x: -224.9, y: 17.4}
+    Hide: 0
+  knots: []
+  textLayer:
+  - tagName: Fuel Pressure
+    Color: {r: 0, g: 0, b: 0, a: 0}
+    Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    FontSize: 20
+    fontStyle: 0
+    Alignement: 4
+    Position: {x: 0, y: 0}
+    Size: {x: 4, y: 4}
+    useTagValue: 0
+    roundToInt: 0
+--- !u!1 &7014769026054236405
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7014769026054236406}
+  - component: {fileID: 7014769026054236407}
+  m_Layer: 0
+  m_Name: Lo After Pistons ^C
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7014769026054236406
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7014769026054236405}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 12.302613, y: -16.29105, z: -328.51373}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1484400182549674202}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7014769026054236407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7014769026054236405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f22de45c7508b714bae33739ae7711e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hide: 0
+  gaugeInputs:
+  - tagName: Fuel Pressure
+    minMaxValue: {x: 0, y: 100}
+    value: 0
+  dial:
+    Alignement: 0
+    Texture: {fileID: 2800000, guid: d32e4223d18f27449965a61143889797, type: 3}
+    Position: {x: 112, y: 144}
+    ScaleRatio: 0.43
+  needles:
+  - tagName: Fuel Pressure
+    Alignement: 4
+    Texture: {fileID: 2800000, guid: 86b33f3417bc79b48bd81c0d35065b45, type: 3}
+    Pivot: {x: -48.99, y: 7.6}
+    PivotOffset: 16.92
+    posPivot: {x: 187.02, y: 233.79001}
+    ScaleRatio: 0.24
+    DialRatioLock: 0
+    needleLimiter:
+    - LimiterName: 
+      minMaxValue: {x: 0, y: 100}
+      StartEndValue: {x: -224.9, y: 44.23}
+    Hide: 0
+  knots: []
+  textLayer:
+  - tagName: Fuel Pressure
+    Color: {r: 0, g: 0, b: 0, a: 0}
+    Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    FontSize: 20
+    fontStyle: 0
+    Alignement: 4
+    Position: {x: 0, y: 0}
+    Size: {x: 4, y: 4}
+    useTagValue: 0
+    roundToInt: 0
+--- !u!1 &7014769026096127202
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7014769026096127203}
+  - component: {fileID: 7014769026096127212}
+  m_Layer: 0
+  m_Name: 'Lo Before ME  ^C '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7014769026096127203
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7014769026096127202}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 12.302613, y: -16.29105, z: -328.51373}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1484400182549674202}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7014769026096127212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7014769026096127202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f22de45c7508b714bae33739ae7711e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hide: 0
+  gaugeInputs:
+  - tagName: Fuel Pressure
+    minMaxValue: {x: 0, y: 100}
+    value: 0
+  dial:
+    Alignement: 0
+    Texture: {fileID: 2800000, guid: d32e4223d18f27449965a61143889797, type: 3}
+    Position: {x: 532.8, y: 505.8}
+    ScaleRatio: 0.43
+  needles:
+  - tagName: Fuel Pressure
+    Alignement: 4
+    Texture: {fileID: 2800000, guid: 86b33f3417bc79b48bd81c0d35065b45, type: 3}
+    Pivot: {x: -48.99, y: 7.6}
+    PivotOffset: 16.92
+    posPivot: {x: 607.82, y: 595.58997}
+    ScaleRatio: 0.24
+    DialRatioLock: 0
+    needleLimiter:
+    - LimiterName: 
+      minMaxValue: {x: 0, y: 100}
+      StartEndValue: {x: -224.9, y: 44.23}
+    Hide: 0
+  knots: []
+  textLayer:
+  - tagName: Fuel Pressure
+    Color: {r: 0, g: 0, b: 0, a: 0}
+    Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    FontSize: 20
+    fontStyle: 0
+    Alignement: 4
+    Position: {x: 0, y: 0}
+    Size: {x: 4, y: 4}
+    useTagValue: 0
+    roundToInt: 0

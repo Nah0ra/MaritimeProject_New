@@ -1,0 +1,915 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6363453200466069548
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6363453200466069549}
+  - component: {fileID: 6363453200466069550}
+  - component: {fileID: 6363453200466069551}
+  m_Layer: 0
+  m_Name: 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6363453200466069549
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6363453200466069548}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 12.302586, y: -16.29105, z: -328.51373}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5864614417973720626}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6363453200466069550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6363453200466069548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f22de45c7508b714bae33739ae7711e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hide: 0
+  gaugeInputs:
+  - tagName: Fuel Pressure
+    minMaxValue: {x: 0, y: 4}
+    value: 0
+  dial:
+    Alignement: 0
+    Texture: {fileID: 2800000, guid: a2da32fdf929e1541867450fadf33153, type: 3}
+    Position: {x: 795.8, y: 450.59}
+    ScaleRatio: 0.487
+  needles:
+  - tagName: Fuel Pressure
+    Alignement: 4
+    Texture: {fileID: 2800000, guid: 86b33f3417bc79b48bd81c0d35065b45, type: 3}
+    Pivot: {x: -48.99, y: 7.6}
+    PivotOffset: 16.92
+    posPivot: {x: 882.847, y: 552.29297}
+    ScaleRatio: 0.24
+    DialRatioLock: 0
+    needleLimiter:
+    - LimiterName: 
+      minMaxValue: {x: 0, y: 4}
+      StartEndValue: {x: -224.9, y: -7.75}
+    Hide: 0
+  knots: []
+  textLayer:
+  - tagName: Fuel Pressure
+    Color: {r: 0, g: 0, b: 0, a: 0}
+    Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    FontSize: 20
+    fontStyle: 0
+    Alignement: 4
+    Position: {x: 0, y: 0}
+    Size: {x: 4, y: 4}
+    useTagValue: 0
+    roundToInt: 0
+--- !u!114 &6363453200466069551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6363453200466069548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 551252383e819cd43be76c034456247b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Forward: 1
+  Value: 0
+  Active: 0
+  RateOfChange: 1
+--- !u!1 &6363453200536676046
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6363453200536676047}
+  - component: {fileID: 6363453200536676040}
+  - component: {fileID: 6363453200536676041}
+  m_Layer: 0
+  m_Name: 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6363453200536676047
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6363453200536676046}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 12.302586, y: -16.29105, z: -328.51373}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5864614417973720626}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6363453200536676040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6363453200536676046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f22de45c7508b714bae33739ae7711e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hide: 0
+  gaugeInputs:
+  - tagName: Fuel Pressure
+    minMaxValue: {x: 0, y: 4}
+    value: 0
+  dial:
+    Alignement: 0
+    Texture: {fileID: 2800000, guid: a2da32fdf929e1541867450fadf33153, type: 3}
+    Position: {x: 458.65, y: 450.59}
+    ScaleRatio: 0.487
+  needles:
+  - tagName: Fuel Pressure
+    Alignement: 4
+    Texture: {fileID: 2800000, guid: 86b33f3417bc79b48bd81c0d35065b45, type: 3}
+    Pivot: {x: -48.99, y: 7.6}
+    PivotOffset: 16.92
+    posPivot: {x: 545.69696, y: 552.29297}
+    ScaleRatio: 0.24
+    DialRatioLock: 0
+    needleLimiter:
+    - LimiterName: 
+      minMaxValue: {x: 0, y: 4}
+      StartEndValue: {x: -224.9, y: -7.75}
+    Hide: 0
+  knots: []
+  textLayer:
+  - tagName: Fuel Pressure
+    Color: {r: 0, g: 0, b: 0, a: 0}
+    Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    FontSize: 20
+    fontStyle: 0
+    Alignement: 4
+    Position: {x: 0, y: 0}
+    Size: {x: 4, y: 4}
+    useTagValue: 0
+    roundToInt: 0
+--- !u!114 &6363453200536676041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6363453200536676046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 551252383e819cd43be76c034456247b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Forward: 1
+  Value: 0
+  Active: 0
+  RateOfChange: 1
+--- !u!1 &6363453200600351293
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6363453200600351294}
+  - component: {fileID: 6363453200600351295}
+  - component: {fileID: 6363453200600351288}
+  m_Layer: 0
+  m_Name: 4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6363453200600351294
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6363453200600351293}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 12.302586, y: -16.29105, z: -328.51373}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5864614417973720626}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6363453200600351295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6363453200600351293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f22de45c7508b714bae33739ae7711e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hide: 0
+  gaugeInputs:
+  - tagName: Fuel Pressure
+    minMaxValue: {x: 0, y: 36}
+    value: 0
+  dial:
+    Alignement: 0
+    Texture: {fileID: 2800000, guid: 3e5046b28074833418842c149ee3baef, type: 3}
+    Position: {x: 795.8, y: 727.3}
+    ScaleRatio: 0.487
+  needles:
+  - tagName: Fuel Pressure
+    Alignement: 4
+    Texture: {fileID: 2800000, guid: 86b33f3417bc79b48bd81c0d35065b45, type: 3}
+    Pivot: {x: -48.99, y: 7.6}
+    PivotOffset: 16.92
+    posPivot: {x: 882.847, y: 829.003}
+    ScaleRatio: 0.24
+    DialRatioLock: 0
+    needleLimiter:
+    - LimiterName: 
+      minMaxValue: {x: 0, y: 36}
+      StartEndValue: {x: -224.9, y: 18.78}
+    Hide: 0
+  knots: []
+  textLayer:
+  - tagName: Fuel Pressure
+    Color: {r: 0, g: 0, b: 0, a: 0}
+    Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    FontSize: 20
+    fontStyle: 0
+    Alignement: 4
+    Position: {x: 0, y: 0}
+    Size: {x: 4, y: 4}
+    useTagValue: 0
+    roundToInt: 0
+--- !u!114 &6363453200600351288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6363453200600351293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 551252383e819cd43be76c034456247b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Forward: 1
+  Value: 0
+  Active: 0
+  RateOfChange: 1
+--- !u!1 &6363453201009337079
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6363453201009337072}
+  - component: {fileID: 6363453201009337073}
+  - component: {fileID: 6363453201009337074}
+  m_Layer: 0
+  m_Name: 9
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6363453201009337072
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6363453201009337079}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 12.302586, y: -16.29105, z: -328.51373}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5864614417973720626}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6363453201009337073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6363453201009337079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f22de45c7508b714bae33739ae7711e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hide: 0
+  gaugeInputs:
+  - tagName: Fuel Pressure
+    minMaxValue: {x: 0, y: 4}
+    value: 0
+  dial:
+    Alignement: 0
+    Texture: {fileID: 2800000, guid: a2da32fdf929e1541867450fadf33153, type: 3}
+    Position: {x: 122.5, y: 727.3}
+    ScaleRatio: 0.487
+  needles:
+  - tagName: Fuel Pressure
+    Alignement: 4
+    Texture: {fileID: 2800000, guid: 86b33f3417bc79b48bd81c0d35065b45, type: 3}
+    Pivot: {x: -48.99, y: 7.6}
+    PivotOffset: 16.92
+    posPivot: {x: 209.547, y: 829.003}
+    ScaleRatio: 0.24
+    DialRatioLock: 0
+    needleLimiter:
+    - LimiterName: 
+      minMaxValue: {x: 0, y: 4}
+      StartEndValue: {x: -224.9, y: -7.75}
+    Hide: 0
+  knots: []
+  textLayer:
+  - tagName: Fuel Pressure
+    Color: {r: 0, g: 0, b: 0, a: 0}
+    Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    FontSize: 20
+    fontStyle: 0
+    Alignement: 4
+    Position: {x: 0, y: 0}
+    Size: {x: 4, y: 4}
+    useTagValue: 0
+    roundToInt: 0
+--- !u!114 &6363453201009337074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6363453201009337079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 551252383e819cd43be76c034456247b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Forward: 1
+  Value: 0
+  Active: 0
+  RateOfChange: 1
+--- !u!1 &6363453201097014900
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6363453201097014901}
+  - component: {fileID: 6363453201097014902}
+  - component: {fileID: 6363453201097014903}
+  m_Layer: 0
+  m_Name: 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6363453201097014901
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6363453201097014900}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 12.302586, y: -16.291042, z: -328.51373}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5864614417973720626}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6363453201097014902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6363453201097014900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f22de45c7508b714bae33739ae7711e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hide: 0
+  gaugeInputs:
+  - tagName: Fuel Pressure
+    minMaxValue: {x: 0, y: 36}
+    value: 0
+  dial:
+    Alignement: 0
+    Texture: {fileID: 2800000, guid: 3e5046b28074833418842c149ee3baef, type: 3}
+    Position: {x: 458.65, y: 727.3}
+    ScaleRatio: 0.487
+  needles:
+  - tagName: Fuel Pressure
+    Alignement: 4
+    Texture: {fileID: 2800000, guid: 86b33f3417bc79b48bd81c0d35065b45, type: 3}
+    Pivot: {x: -48.99, y: 7.6}
+    PivotOffset: 16.92
+    posPivot: {x: 545.69696, y: 829.003}
+    ScaleRatio: 0.24
+    DialRatioLock: 0
+    needleLimiter:
+    - LimiterName: 
+      minMaxValue: {x: 0, y: 36}
+      StartEndValue: {x: -224.9, y: 18.78}
+    Hide: 0
+  knots: []
+  textLayer:
+  - tagName: Fuel Pressure
+    Color: {r: 0, g: 0, b: 0, a: 0}
+    Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    FontSize: 20
+    fontStyle: 0
+    Alignement: 4
+    Position: {x: 0, y: 0}
+    Size: {x: 4, y: 4}
+    useTagValue: 0
+    roundToInt: 0
+--- !u!114 &6363453201097014903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6363453201097014900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 551252383e819cd43be76c034456247b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Forward: 1
+  Value: 0
+  Active: 0
+  RateOfChange: 1
+--- !u!1 &6363453201724477100
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6363453201724477101}
+  - component: {fileID: 6363453201724477102}
+  - component: {fileID: 6363453201724477103}
+  m_Layer: 0
+  m_Name: 5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6363453201724477101
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6363453201724477100}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 12.302586, y: -16.29105, z: -328.51373}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5864614417973720626}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6363453201724477102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6363453201724477100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f22de45c7508b714bae33739ae7711e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hide: 0
+  gaugeInputs:
+  - tagName: Fuel Pressure
+    minMaxValue: {x: 0, y: 4}
+    value: 0
+  dial:
+    Alignement: 0
+    Texture: {fileID: 2800000, guid: a2da32fdf929e1541867450fadf33153, type: 3}
+    Position: {x: 122.5, y: 169.94}
+    ScaleRatio: 0.487
+  needles:
+  - tagName: Fuel Pressure
+    Alignement: 4
+    Texture: {fileID: 2800000, guid: 86b33f3417bc79b48bd81c0d35065b45, type: 3}
+    Pivot: {x: -48.99, y: 7.6}
+    PivotOffset: 16.92
+    posPivot: {x: 209.547, y: 271.643}
+    ScaleRatio: 0.24
+    DialRatioLock: 0
+    needleLimiter:
+    - LimiterName: 
+      minMaxValue: {x: 0, y: 4}
+      StartEndValue: {x: -224.9, y: -7.75}
+    Hide: 0
+  knots: []
+  textLayer:
+  - tagName: Fuel Pressure
+    Color: {r: 0, g: 0, b: 0, a: 0}
+    Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    FontSize: 20
+    fontStyle: 0
+    Alignement: 4
+    Position: {x: 0, y: 0}
+    Size: {x: 4, y: 4}
+    useTagValue: 0
+    roundToInt: 0
+--- !u!114 &6363453201724477103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6363453201724477100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 551252383e819cd43be76c034456247b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Forward: 1
+  Value: 0
+  Active: 0
+  RateOfChange: 1
+--- !u!1 &6363453201770841488
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6363453201770841489}
+  - component: {fileID: 6363453201770841490}
+  - component: {fileID: 6363453201770841491}
+  m_Layer: 0
+  m_Name: 6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6363453201770841489
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6363453201770841488}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 12.302586, y: -16.29105, z: -328.51373}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5864614417973720626}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6363453201770841490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6363453201770841488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f22de45c7508b714bae33739ae7711e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hide: 0
+  gaugeInputs:
+  - tagName: Fuel Pressure
+    minMaxValue: {x: 0, y: 4}
+    value: 0
+  dial:
+    Alignement: 0
+    Texture: {fileID: 2800000, guid: a2da32fdf929e1541867450fadf33153, type: 3}
+    Position: {x: 122.5, y: 450.59}
+    ScaleRatio: 0.487
+  needles:
+  - tagName: Fuel Pressure
+    Alignement: 4
+    Texture: {fileID: 2800000, guid: 86b33f3417bc79b48bd81c0d35065b45, type: 3}
+    Pivot: {x: -48.99, y: 7.6}
+    PivotOffset: 16.92
+    posPivot: {x: 209.547, y: 552.29297}
+    ScaleRatio: 0.24
+    DialRatioLock: 0
+    needleLimiter:
+    - LimiterName: 
+      minMaxValue: {x: 0, y: 4}
+      StartEndValue: {x: -224.9, y: -7.75}
+    Hide: 0
+  knots: []
+  textLayer:
+  - tagName: Fuel Pressure
+    Color: {r: 0, g: 0, b: 0, a: 0}
+    Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    FontSize: 20
+    fontStyle: 0
+    Alignement: 4
+    Position: {x: 0, y: 0}
+    Size: {x: 4, y: 4}
+    useTagValue: 0
+    roundToInt: 0
+--- !u!114 &6363453201770841491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6363453201770841488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 551252383e819cd43be76c034456247b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Forward: 1
+  Value: 0
+  Active: 0
+  RateOfChange: 1
+--- !u!1 &6363453202278241243
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6363453202278241236}
+  - component: {fileID: 6363453202278241237}
+  - component: {fileID: 6363453202278241238}
+  m_Layer: 0
+  m_Name: 8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6363453202278241236
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6363453202278241243}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 12.302586, y: -16.29105, z: -328.51373}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5864614417973720626}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6363453202278241237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6363453202278241243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f22de45c7508b714bae33739ae7711e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hide: 0
+  gaugeInputs:
+  - tagName: Fuel Pressure
+    minMaxValue: {x: 0, y: 1}
+    value: 0
+  dial:
+    Alignement: 0
+    Texture: {fileID: 2800000, guid: e23490540d8360143b8b37da048b2f60, type: 3}
+    Position: {x: 795.8, y: 169.94}
+    ScaleRatio: 0.487
+  needles:
+  - tagName: Fuel Pressure
+    Alignement: 4
+    Texture: {fileID: 2800000, guid: 86b33f3417bc79b48bd81c0d35065b45, type: 3}
+    Pivot: {x: -48.99, y: 7.6}
+    PivotOffset: 16.92
+    posPivot: {x: 882.847, y: 271.643}
+    ScaleRatio: 0.24
+    DialRatioLock: 0
+    needleLimiter:
+    - LimiterName: 
+      minMaxValue: {x: 0, y: 1}
+      StartEndValue: {x: -224.9, y: -7.75}
+    Hide: 0
+  knots: []
+  textLayer:
+  - tagName: Fuel Pressure
+    Color: {r: 0, g: 0, b: 0, a: 0}
+    Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    FontSize: 20
+    fontStyle: 0
+    Alignement: 4
+    Position: {x: 0, y: 0}
+    Size: {x: 4, y: 4}
+    useTagValue: 0
+    roundToInt: 0
+--- !u!114 &6363453202278241238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6363453202278241243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 551252383e819cd43be76c034456247b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Forward: 1
+  Value: 0
+  Active: 0
+  RateOfChange: 1
+--- !u!1 &6363453202398303457
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6363453202398303452}
+  - component: {fileID: 6363453202398303459}
+  - component: {fileID: 6363453202398303453}
+  m_Layer: 0
+  m_Name: 7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6363453202398303452
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6363453202398303457}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.848057, y: 55.293194, z: -334.21436}
+  m_LocalScale: {x: 2.4084296, y: 2.4084296, z: 2.4084296}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5864614417973720626}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6363453202398303459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6363453202398303457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f22de45c7508b714bae33739ae7711e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hide: 0
+  gaugeInputs:
+  - tagName: Fuel Pressure
+    minMaxValue: {x: 0, y: 8}
+    value: 0
+  dial:
+    Alignement: 0
+    Texture: {fileID: 2800000, guid: 80b1fb10e7b617b42a8c3e693e1b763c, type: 3}
+    Position: {x: 458.65, y: 169.94}
+    ScaleRatio: 0.487
+  needles:
+  - tagName: Fuel Pressure
+    Alignement: 4
+    Texture: {fileID: 2800000, guid: 86b33f3417bc79b48bd81c0d35065b45, type: 3}
+    Pivot: {x: -48.99, y: 7.6}
+    PivotOffset: 16.92
+    posPivot: {x: 545.69696, y: 271.643}
+    ScaleRatio: 0.24
+    DialRatioLock: 0
+    needleLimiter:
+    - LimiterName: 
+      minMaxValue: {x: 0, y: 8}
+      StartEndValue: {x: -224.9, y: -7.75}
+    Hide: 0
+  knots: []
+  textLayer:
+  - tagName: Fuel Pressure
+    Color: {r: 0, g: 0, b: 0, a: 0}
+    Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    FontSize: 20
+    fontStyle: 0
+    Alignement: 4
+    Position: {x: 0, y: 0}
+    Size: {x: 4, y: 4}
+    useTagValue: 0
+    roundToInt: 0
+--- !u!114 &6363453202398303453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6363453202398303457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 551252383e819cd43be76c034456247b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Forward: 1
+  Value: 0
+  Active: 0
+  RateOfChange: 1
+--- !u!1 &7084533101783292635
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5864614417973720626}
+  m_Layer: 0
+  m_Name: Compressed_Dials
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5864614417973720626
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7084533101783292635}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -15.465366, y: 18.530964, z: 324.46622}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6363453200536676047}
+  - {fileID: 6363453200466069549}
+  - {fileID: 6363453201097014901}
+  - {fileID: 6363453200600351294}
+  - {fileID: 6363453201724477101}
+  - {fileID: 6363453201770841489}
+  - {fileID: 6363453202398303452}
+  - {fileID: 6363453202278241236}
+  - {fileID: 6363453201009337072}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
