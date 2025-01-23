@@ -34,7 +34,6 @@ public class GameManager : MonoBehaviourPunCallbacks
     private GameObject SteamUI;
     private GameObject CoolUI;
     private GameObject MiscUI;
-    private GameObject SaveGUI;
 
     //Dials
     public GameObject MainDials;
@@ -57,7 +56,7 @@ public class GameManager : MonoBehaviourPunCallbacks
     private Button SteamButton;
     private Button CoolButton;
     private Button MiscButton;
-    private Button SaveGUIButton;
+
     public bool AllClients;
 
 
@@ -171,7 +170,6 @@ public class GameManager : MonoBehaviourPunCallbacks
                 PowerUI.SetActive(false);
                 SteamUI.SetActive(false);
                 MiscUI.SetActive(false);
-                SaveGUI.SetActive(false);
 
                 foreach (Transform child in MainDials.transform)
                     child.GetComponent<SimpleGaugeMaker>().Hide = false;
@@ -206,7 +204,6 @@ public class GameManager : MonoBehaviourPunCallbacks
                 PowerUI.SetActive(false);
                 SteamUI.SetActive(false);
                 MiscUI.SetActive(false);
-                SaveGUI.SetActive(false);
 
                 foreach (Transform child in MainDials.transform)
                     child.GetComponent<SimpleGaugeMaker>().Hide = true;
@@ -241,7 +238,6 @@ public class GameManager : MonoBehaviourPunCallbacks
                 PowerUI.SetActive(false);
                 SteamUI.SetActive(false);
                 MiscUI.SetActive(false);
-                SaveGUI.SetActive(false);
 
                 LubeUI.transform.GetChild(0).gameObject.SetActive(true);
 
@@ -279,7 +275,6 @@ public class GameManager : MonoBehaviourPunCallbacks
                 PowerUI.SetActive(false);
                 SteamUI.SetActive(false);
                 MiscUI.SetActive(false);
-                SaveGUI.SetActive(false);
 
                 foreach (Transform child in MainDials.transform)
                     child.GetComponent<SimpleGaugeMaker>().Hide = true;
@@ -314,7 +309,6 @@ public class GameManager : MonoBehaviourPunCallbacks
                 PowerUI.SetActive(false);
                 SteamUI.SetActive(false);
                 MiscUI.SetActive(false);
-                SaveGUI.SetActive(false);
 
                 foreach (Transform child in MainDials.transform)
                     child.GetComponent<SimpleGaugeMaker>().Hide = true;
@@ -349,7 +343,6 @@ public class GameManager : MonoBehaviourPunCallbacks
                 PowerUI.SetActive(true);
                 SteamUI.SetActive(false);
                 MiscUI.SetActive(false);
-                SaveGUI.SetActive(false);
 
                 foreach (Transform child in MainDials.transform)
                     child.GetComponent<SimpleGaugeMaker>().Hide = true;
@@ -384,7 +377,6 @@ public class GameManager : MonoBehaviourPunCallbacks
                 PowerUI.SetActive(false);
                 SteamUI.SetActive(true);
                 MiscUI.SetActive(false);
-                SaveGUI.SetActive(false);
 
                 foreach (Transform child in MainDials.transform)
                     child.GetComponent<SimpleGaugeMaker>().Hide = true;
@@ -419,7 +411,6 @@ public class GameManager : MonoBehaviourPunCallbacks
                 PowerUI.SetActive(false);
                 SteamUI.SetActive(false);
                 MiscUI.SetActive(true);
-                SaveGUI.SetActive(false);
 
                 foreach (Transform child in MainDials.transform)
                     child.GetComponent<SimpleGaugeMaker>().Hide = true;
@@ -443,45 +434,7 @@ public class GameManager : MonoBehaviourPunCallbacks
                     child.GetComponent<SimpleGaugeMaker>().Hide = true;
 
                 break;
-            case "SaveGUIButton":
-                MainUI.SetActive(false);
-                FuelUI.SetActive(false);
-                LubeUI.SetActive(false);
-                LubeTanks.SetActive(false);
-                CoolUI.SetActive(false);
-                CompUI.SetActive(false);
-                PowerUI.SetActive(false);
-                SteamUI.SetActive(false);
-                MiscUI.SetActive(false);
-                SaveGUI.SetActive(true);
-
-                GameObject.FindGameObjectWithTag("SaveButton").GetComponent<Button>().onClick.AddListener(CheckInputField);
-                GameObject.FindGameObjectWithTag("LoadButton").GetComponent<Button>().onClick.AddListener(CheckInputField);
-
-
-                foreach (Transform child in MainDials.transform)
-                    child.GetComponent<SimpleGaugeMaker>().Hide = true;
-
-                foreach (Transform child in FuelDials.transform)
-                    child.GetComponent<SimpleGaugeMaker>().Hide = true;
-
-                foreach (Transform child in LubeDials.transform)
-                    child.GetComponent<SimpleGaugeMaker>().Hide = true;
-
-                foreach (Transform child in CoolDials.transform)
-                    child.GetComponent<SimpleGaugeMaker>().Hide = true;
-
-                foreach (Transform child in CompDials.transform)
-                    child.GetComponent<SimpleGaugeMaker>().Hide = true;
-
-                foreach (Transform child in PowerDials.transform)
-                    child.GetComponent<SimpleGaugeMaker>().Hide = true;
-
-                foreach (Transform child in SteamDials.transform)
-                    child.GetComponent<SimpleGaugeMaker>().Hide = true;
-
-                break;
-
+            
             default:
                 //Debug.Log("Button Unassigned");
                 break;
@@ -504,7 +457,6 @@ public class GameManager : MonoBehaviourPunCallbacks
         PowerOBJ = GameObject.Find("Power_Plant_OBJ");
         SteamOBJ = GameObject.Find("Steam_OBJ");
         MiscOBJ = GameObject.Find("Miscellaneous_OBJ");
-        SaveGUI_OBJ = GameObject.Find("SaveGUI_OBJ");
         ShorePower = GameObject.Find("Shore Power");
 
         //Assigning UI
@@ -516,7 +468,6 @@ public class GameManager : MonoBehaviourPunCallbacks
         PowerUI = PowerOBJ.transform.GetChild(0).gameObject;
         SteamUI = SteamOBJ.transform.GetChild(0).gameObject;
         MiscUI = MiscOBJ.transform.GetChild(0).gameObject;
-        SaveGUI = SaveGUI_OBJ.transform.GetChild(0).gameObject;
         FuelUI.SetActive(false);
         LubeUI.SetActive(false);
         LubeTanks.SetActive(false);
@@ -525,7 +476,6 @@ public class GameManager : MonoBehaviourPunCallbacks
         PowerUI.SetActive(false);
         SteamUI.SetActive(false);
         MiscUI.SetActive(false);
-        SaveGUI.SetActive(false);
         ShorePower.SetActive(false);
 
         //Assigning Dials
@@ -565,9 +515,6 @@ public class GameManager : MonoBehaviourPunCallbacks
         SteamButton = GameObject.FindGameObjectWithTag("SteamButton").GetComponent<Button>();
         CoolButton = GameObject.FindGameObjectWithTag("CoolButton").GetComponent<Button>();
         MiscButton = GameObject.FindGameObjectWithTag("MiscButton").GetComponent<Button>();
-        SaveGUIButton = GameObject.FindGameObjectWithTag("SaveGUIButton").GetComponent<Button>();
-        // SaveButton = GameObject.FindGameObjectWithTag("SaveButton").GetComponent<Button>();
-        // LoadButton = GameObject.FindGameObjectWithTag("LoadButton").GetComponent<Button>();
 
         //Adding event listeners to buttons
         MainButton.onClick.AddListener(LoadPanel);
@@ -578,9 +525,7 @@ public class GameManager : MonoBehaviourPunCallbacks
         SteamButton.onClick.AddListener(LoadPanel);
         CoolButton.onClick.AddListener(LoadPanel);
         MiscButton.onClick.AddListener(LoadPanel);
-        SaveGUIButton.onClick.AddListener(LoadPanel);
-        // SaveButton.onClick.AddListener(CheckInputField);
-        // LoadButton.onClick.AddListener(CheckInputField);
+
     }
 
     private void CheckInputField()
