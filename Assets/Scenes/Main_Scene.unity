@@ -20057,17 +20057,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1203023913}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -324.46622}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 335643583}
-  m_Father: {fileID: 1767460919}
+  m_Father: {fileID: 9041097713331332795}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1370, y: 638}
+  m_AnchoredPosition: {x: 1385.4653, y: 619.46906}
   m_SizeDelta: {x: 160, y: 152.24}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1203023915
@@ -30288,7 +30288,6 @@ Transform:
   m_Children:
   - {fileID: 9041097713331332795}
   - {fileID: 20121879880990940}
-  - {fileID: 1203023914}
   m_Father: {fileID: 1186043991}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1767462764
@@ -45303,7 +45302,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2536359693159950125}
   m_Layer: 5
-  m_Name: Styling, Shading, Panels, Dails
+  m_Name: Styling, Shading, Panels, Dials
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61141,6 +61140,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2536359693159950125}
+  - {fileID: 1203023914}
   m_Father: {fileID: 1767460919}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!222 &9134887382646271492
